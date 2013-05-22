@@ -52,6 +52,42 @@
      Topic 2: Find out the best algorithm to solve the famous Fermat-Torricelli problem with weights. 
      We shall investigate three methods to solve them. For details and papers about this topic see:
      https://drive.google.com/folderview?id=0B-LLRo89XGyvVWhhQnROTTVJWlU&usp=sharing
+     
+     
+     
+     
+     
+     +\section{Source Document}
+   The following are the authors for "An Efficient Primal-Dual Interior-Point Method for Minimizing a Sum of Euclidean Norms"
+
+    \begin{enumerate}
+      \item Knud D.Andersen
+      \item Edmund Christiansen
+      \item Andrew R. Conn
+      \item Michael L. Overton
+      
+  Abstract. The problem of minimizinga sum of Euclidean norms dates from the 17th century
+and may be the earliest example of duality in the mathematical programming literature. This
+nonsmooth optimization problem arises in many diﬀerent kinds of modern scientiﬁc applications.
+We derive a primal-dual interior-point algorithm for the problem, by applying Newton’s method
+directly to a system of nonlinear equations characterizingprimal and dual feasibility and a perturbed
+complementarity condition. The main work at each step consists of solvinga system of linear
+equations (the Schur complement equations). This Schur complement matrix is not symmetric, unlike
+in linear programming. We incorporate a Mehrotra-type predictor-corrector scheme and present
+some experimental results comparing several variations of the algorithm, including, as one option,
+explicit symmetrization of the Schur complement with a skew corrector term. We also present
+results obtained from a code implemented to solve large sparse problems, using a symmetrized Schur
+complement. This has been applied to problems arisingin plastic collapse analysis, with hundreds
+of thousands of variables and millions of nonzeros in the constraint matrix. The algorithm typically
+ﬁnds accurate solutions in less than 50 iterations and determines physically meaningful solutions
+previously unobtainable.    
+      
+    \end{enumerate}
+    
+    
+    
+    
+    
 
 
 
