@@ -1,95 +1,72 @@
-\documentclass{article}
 
+\documentclass[13pt]{article}
 
+\usepackage[english]{babel}
+\usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{graphicx} % includegraphics command is implemented here
-\usepackage{titling}
-\usepackage{listings}
-\usepackage{color}
-\usepackage[font=scriptsize]{caption}
 
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
 
-\lstset{frame=tb,
-  language=Python,
-  aboveskip=3mm,
-  belowskip=3mm,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{gray},
-  keywordstyle=\color{blue},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
-  breaklines=true,
-  breakatwhitespace=true
-  tabsize=3
-}
-\newcommand{\subtitle}[1]{%
-  \posttitle{%
-    \par\end{center}
-    \begin{center}\large#1\end{center}
-    \vskip0.2em}%
-}
-%pre-amble
-\title{\textbf{Group Project}}
-\members{ \emph{members:} Hao Chen, Hon Leung Lee, Xin Guo, Di Wu}
-\date{May 21th, 2013}
+
+\title{HW 7}
+\author{Xin Guo}
+
 \begin{document}
-\maketitle % typeset the title
+\maketitle
+
+\begin{AHA}
+this homework
+\end{AHA}
+
 \section{Introduction}
-     Topic 1: Investigate this challenge problem: 
-     given a binary integer a, define an operation to be: add a any number of + signs between any two digits of a, 
-     and compute the sum. It's clear given any number, finitely many operations will change this number a to 1. 
-     Now the question is: How many operations do you need at most? An example: 
-     a = 100111011 -> 100+1+1+10+11 = 1011 -> 10+1+1 = 100 -> 1+0+0 = 1 
-     Goal: give an absolute constant C, such that for any number a, there exists a sequence of at most C operations, 
-     changing a to 1.
-     
-     Topic 2: Find out the best algorithm to solve the famous Fermat-Torricelli problem with weights. 
-     We shall investigate three methods to solve them. For details and papers about this topic see:
-     https://drive.google.com/folderview?id=0B-LLRo89XGyvVWhhQnROTTVJWlU&usp=sharing
-     
-     
-     
-     
-     
-     +\section{Source Document}
-   The following are the authors for "An Efficient Primal-Dual Interior-Point Method for Minimizing a Sum of Euclidean Norms"
 
-    \begin{enumerate}
-      \item Knud D.Andersen
-      \item Edmund Christiansen
-      \item Andrew R. Conn
-      \item Michael L. Overton
-      
-  Abstract. The problem of minimizinga sum of Euclidean norms dates from the 17th century
-and may be the earliest example of duality in the mathematical programming literature. This
-nonsmooth optimization problem arises in many diﬀerent kinds of modern scientiﬁc applications.
-We derive a primal-dual interior-point algorithm for the problem, by applying Newton’s method
-directly to a system of nonlinear equations characterizingprimal and dual feasibility and a perturbed
-complementarity condition. The main work at each step consists of solvinga system of linear
-equations (the Schur complement equations). This Schur complement matrix is not symmetric, unlike
-in linear programming. We incorporate a Mehrotra-type predictor-corrector scheme and present
-some experimental results comparing several variations of the algorithm, including, as one option,
-explicit symmetrization of the Schur complement with a skew corrector term. We also present
-results obtained from a code implemented to solve large sparse problems, using a symmetrized Schur
-complement. This has been applied to problems arisingin plastic collapse analysis, with hundreds
-of thousands of variables and millions of nonzeros in the constraint matrix. The algorithm typically
-ﬁnds accurate solutions in less than 50 iterations and determines physically meaningful solutions
-previously unobtainable.    
-      
-    \end{enumerate}
-    
-    
-    
-    
-    
+Create a 2 page LaTeX document that is about your project. Use at least the following features from latex: at least one math formula, lists . Your solution should be a link to a directory on github that contains at least a .tex file and a .pdf file (so I can easily look at the pdf generated from your tex file without having to tex it myself). IMPORTANT: I will only grade this based on the typesetting, not on the mathematical *content* of your document.
+
+\section{Yes \LaTeX{} Yes}
+\label{sec:examples}
+
+\subsection{introduction of Knud D. Andersen}
+Knud D. Andersen: A Modified Schur-Complement Method for Handling Dense Columns in Interior-Point Methods for Linear Programming. ACM Trans. Math. Softw. 22(3): 348-356 (1996)
 
 
+\subsection{a book}
+
+
+Authors: Knud D. Andersen 
+Journal: ACM Trans. Math. Softw. Vol. 22 No. 3 Pg. 348-356 [Contents] 
+Year: 1996 
+Language: English 
+Type: journal (article) 
+Source: DBLP
+
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+AHA & AHAHA \\\hline
+left & yes \\
+right & no
+\end{tabular}
+\caption{\label{tab:widgets}above is a table.}
+\end{table}
+
+\subsection{another section}
+
+\letsSee{} what happens 
+$$A_n = \frac{M_1 + M_2 + \cdots + M_n}{n}
+      = \frac{1}{p}\sum_{i}^{n} M_i$$
+
+
+\subsection{Last}
+
+members are \dots
+
+\begin{enumerate}
+\item Hao
+\item Lee
+\item Di
+\item Xin
+\end{enumerate}
+\dots 
 
 
 \end{document}
